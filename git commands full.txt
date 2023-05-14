@@ -1,0 +1,71 @@
+﻿git commit -m ":fire: :art: Initialization :sparkles: :globe_with_meridians:"
+
+git add .
+
+git commit -m ":fire: :art: First Commit Desktop Layout :sparkles: :globe_with_meridians:"
+git commit -m ":fire: :art: Second Commit Desktop Layout :sparkles: :globe_with_meridians:"
+git commit -m ":fire: :art: Third Commit Desktop Layout :sparkles: :globe_with_meridians:"
+git commit -m ":fire: :art: Fourth Commit Desktop Layout :sparkles: :globe_with_meridians:"
+git commit -m ":fire: :art: Fifth Commit Desktop Layout :sparkles: :globe_with_meridians:"
+git commit -m ":fire: :art: Commit Desktop Layout :sparkles: :globe_with_meridians:"
+
+git commit -m ":fire: :art: Commit Search Functionality :sparkles: :globe_with_meridians:"
+
+git commit -m ":iphone: :seedling: Mobile Responsive :sparkles: :iphone:"
+git commit -m ":iphone: :seedling: Tablet Responsive :sparkles: :iphone:"
+git commit -m ":iphone: :seedling: Dark Mode - Light Mode :sparkles: :iphone:"
+
+git commit -m ":iphone: :seedling: Mobile First :sparkles: :iphone:"
+git commit -m ":iphone: :seedling: Fetch data from JSON & display it :sparkles: :iphone:"
+git commit -m ":iphone: :seedling: Update Mobile Responsive :sparkles: :iphone:"
+git commit -m ":iphone: :seedling: Filter The Data and display it :sparkles: :iphone:"
+
+git commit -m ":iphone: :seedling: Adding map library and displaying it :sparkles: :iphone:"
+git commit -m ":fire: :art: Get Data from API :sparkles: :globe_with_meridians:"
+
+** create empty repository :
+ git init
+---------------------------------
+** set your name and email :
+git config --global user.name "Abdelilah EL Haddad"
+git config --global user.email "elhaddadabdelilah@gmail.com"
+----------------------------------------------------
+** link your local repo. with github a repository : (only if you have an empty repository on github and you are the first one to add things to it)
+
+git remote add origin (link of your repository on github)
+----------------------------------------------------------
+----------------------------------------------------------
+** To confirm Changes :
+- frst adding them to stagging area : git add .
+- then commit with a suitable commit message :git commit -m "your commit message"
+--------
+** to view commits log (history) :
+git log
+---------------------------------
+** to push your commits to the github repository:
+git push origin main  (or branch name instead of main)
+
+---------------------------------------------------------------------------------------------------------
+---------------------------------------------------------------------------------------------------------
+** to download the repository to your pc :
+git clone http............ (link of the repo.)
+
+** ((don't type (git remote) as you have the remote already after cloning !!))
+--------------------------------------------------------------------------------------
+
+** to pull the latest update from github to your computer :
+git pull origin main (or branch name instead of main)
+--------------------------------------------------------------------------------------
+** لو انت كتبت حاجات بالغلط وحبيت تلغيها كلها وترجع لآخر حاجة بعد آخر كومميت
+git reset --hard
+---------------------------------------------------------------------------------
+** Branches **
+** عشان تعرض البرانش الحالي / to view the current branch :
+git branch
+
+** عشان تعمل برانش جديد وتحول ليه / create a new branch and switch to it :
+git checkout -b (branch name)
+
+** master to main:
+git branch -m master main
+

@@ -1,0 +1,39 @@
+Here's a sample code for registering a custom taxonomy called "Genre" for a custom post type called "Book":
+
+function create_book_taxonomy() {
+    $labels = array(
+        'name' => 'Genres',
+        'singular_name' => 'Genre',
+        'search_items' => 'Search Genres',
+        'all_items' => 'All Genres',
+        'parent_item' => 'Parent Genre',
+        'parent_item_colon' => 'Parent Genre:',
+        'edit_item' => 'Edit Genre',
+        'update_item' => 'Update Genre',
+        'add_new_item' => 'Add New Genre',
+        'new_item_name' => 'New Genre Name',
+        'menu_name' => 'Genre',
+    );
+    $args = array(
+        'hierarchical' => true,
+        'labels' => $labels,
+        'show_ui' => true,
+        'show_admin_column' => true,
+        'query_var' => true,
+        'rewrite' => array('slug' => 'genre'),
+    );
+    register_taxonomy('genre', 'book', $args);
+}
+add_action( 'init', 'create_book_taxonomy', 0 );
+
+Here's a sample code for displaying the custom taxonomy terms on a single "Book" post in WordPress:
+
+$terms = get_the_terms( get_the_ID(), 'genre' );
+if ( $terms && ! is_wp_error( $terms ) ) {
+    $genre_names = array();
+    foreach ( $terms as $term ) {
+        $genre_names[] = $term->name;
+    }
+    $genre = join( ", ", $genre_names );
+    echo "Genre: " . $genre;
+}
